@@ -10,9 +10,6 @@ namespace Tinky {
 			get {
 				return _name;
 			}
-			set {
-				_name = value;
-			}
 		}
 		
 		public State () {
@@ -24,8 +21,20 @@ namespace Tinky {
 	}
 
 	public class Transition {
+
+        public string   name;
+        public State    from;
+        public State    to;
+
 		public Transition () {
 		}
+
+        public Transition (string n, State f, State t) {
+            name    = n;
+            from    = f;
+            to      = t;
+        }
+
 	}
 }
 
