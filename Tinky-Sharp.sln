@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinky-Sharp", "Tinky-Sharp\Tinky-Sharp.csproj", "{6BACE082-66B6-46C9-9FD7-7CA0B4F02A10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{477259FD-D4A8-4AA1-86EC-3479B117483E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +18,7 @@ Global
 		{6BACE082-66B6-46C9-9FD7-7CA0B4F02A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BACE082-66B6-46C9-9FD7-7CA0B4F02A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BACE082-66B6-46C9-9FD7-7CA0B4F02A10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
