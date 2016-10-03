@@ -36,5 +36,16 @@ namespace Tinky {
         }
 
 	}
+
+	public class Workflow {
+		public string name;
+
+		public Workflow () {
+		}
+
+		public Workflow(string n ) {
+			name = n;
+		}
+	}
 }
 
