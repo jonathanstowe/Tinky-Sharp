@@ -4,13 +4,22 @@ using System;
 namespace Tinky {
 	public class State {
 
+		private string _name;
+
 		public string name {
-			get;
-			set;
+			get {
+				return _name;
+			}
+			set {
+				_name = value;
+			}
 		}
 		
 		public State () {
 
+		}
+		public State (string name) {
+			_name = name;
 		}
 	}
 
