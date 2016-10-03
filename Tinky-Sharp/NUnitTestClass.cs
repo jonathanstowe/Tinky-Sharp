@@ -4,17 +4,17 @@ using Tinky;
 
 namespace TinkySharp
 {
-	[TestFixture ()]
+	[TestFixture, Description("Basic Tests") ]
 	public class NUnitTestClass 
 	{
-		[Test ()]
+		[Test, Description("Basic State Tests") ]
 		public void TestState ()
 		{
 			State s = new State ("state1");
 			Assert.That (s.name, Is.EqualTo ("state1"));
 		}
 
-		[Test ()]
+		[Test, Description("Basic Transition Tests")]
 		public void TestTransition () {
 			State s_from = new State ("from");
 			Assert.That (s_from.name, Is.EqualTo ("from"));
