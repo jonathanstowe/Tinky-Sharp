@@ -2,6 +2,7 @@
 using System;
 
 namespace Tinky {
+
 	public class State {
 
 		private string _name;
@@ -15,6 +16,7 @@ namespace Tinky {
 		public State () {
 
 		}
+
 		public State (string name) {
 			_name = name;
 		}
@@ -38,6 +40,7 @@ namespace Tinky {
 	}
 
 	public class Workflow {
+
 		public string name;
 
 		public Workflow () {
