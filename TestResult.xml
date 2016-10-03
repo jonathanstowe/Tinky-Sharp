@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="/home/jonathan/devel/mono/Tinky-Sharp/Tinky-Sharp/Tinky-Sharp/bin/Debug/Tinky-Sharp.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-10-03" time="22:07:42">
+  <environment nunit-version="2.6.4.0" clr-version="4.0.30319.17020" os-version="Unix 4.7.4.200" platform="Unix" cwd="/home/jonathan/devel/mono/Tinky-Sharp/Tinky-Sharp" machine-name="coriolanus" user="jonathan" user-domain="coriolanus" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="/home/jonathan/devel/mono/Tinky-Sharp/Tinky-Sharp/Tinky-Sharp/bin/Debug/Tinky-Sharp.dll" executed="True" result="Success" success="True" time="0.040" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="TinkySharp" executed="True" result="Success" success="True" time="0.030" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="NUnitTestClass" description="Basic Tests" executed="True" result="Success" success="True" time="0.029" asserts="0">
+            <results>
+              <test-case name="TinkySharp.NUnitTestClass.TestState" description="Basic State Tests" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+              <test-case name="TinkySharp.NUnitTestClass.TestTransition" description="Basic Transition Tests" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
