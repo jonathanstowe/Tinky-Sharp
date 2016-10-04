@@ -1,9 +1,11 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 namespace Tinky {
 
-	public class State {
+	public class State :IEquatable<State> {
+
 
 		private string _name;
 
@@ -20,9 +22,32 @@ namespace Tinky {
 		public State (string name) {
 			_name = name;
 		}
+
+		public bool Equals(State n) {
+			
+			if (n == null)
+				return false;
+			else if (n.name == this.name)
+				return true;
+			else
+				return false;
+		}
+
+		public override bool Equals(Object n) {
+			if (n == null)
+				return false;
+			else {
+				State stateObj = n as State;
+				if (stateObj == null)
+					return false;
+				else
+					return Equals(stateObj);
+			}
+		}
+
 	}
 
-	public class Transition {
+	public class Transition :IEquatable<Transition> {
 
         public string   name;
         public State    from;
@@ -36,6 +61,16 @@ namespace Tinky {
             from    = f;
             to      = t;
         }
+
+		public bool Equals(Transition n ) {
+			if ( n == null )
+				return false;
+			else if (n.name == this.name)
+				return true;
+			else
+				return true;
+				
+		}
 
 	}
 
