@@ -20,7 +20,7 @@ namespace TinkySharp
 			Assert.That (s_from.name, Is.EqualTo ("from"));
 			State s_to = new State ("to");
 			Assert.That (s_to.name, Is.EqualTo ("to"));
-			Transition t = new Transition ("transition", s_from, s_to);
+			Transition t = new Transition() { name="transition", from=s_from,to=s_to };
 			Assert.That (t.name, Is.EqualTo ("transition"));
 		}
 	}
