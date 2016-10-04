@@ -41,8 +41,12 @@ namespace Tinky {
 				if (stateObj == null)
 					return false;
 				else
-					return Equals(stateObj);
+					return this.Equals(stateObj);
 			}
+		}
+
+		public override int GetHashCode() {
+			return this.name.GetHashCode ();
 		}
 
 	}
@@ -72,18 +76,50 @@ namespace Tinky {
 				
 		}
 
+		public override bool Equals(Object n) {
+			if (n == null)
+				return false;
+			else {
+				Transition transObj = n as Transition;
+				if (transObj == null)
+					return false;
+				else
+					return this.Equals(transObj);
+			}
+		}
+
+
+		public override int GetHashCode() {
+			return this.name.GetHashCode ();
+		}
+
 	}
 
 	public class Workflow {
 
-		public string name;
+		public string Name;
+
+		private List<Transition> transitions;
+
+		public List<Transition> Transitions {
+			get {
+				if (transitions == null) {
+					transitions = new List<Transition> ();
+				}
+				return transitions;
+			}
+			set {
+				transitions = value;
+			}
+		}
+
+
 
 		public Workflow () {
 		}
 
 		public Workflow(string n ) {
-			name = n;
+			Name = n;
 		}
 	}
 }
-
