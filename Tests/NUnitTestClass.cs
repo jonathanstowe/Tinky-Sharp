@@ -14,6 +14,17 @@ namespace TinkySharp
 			Assert.That (s.name, Is.EqualTo ("state1"));
 		}
 
+		[Test, Description("State Equals tests") ]
+		public void TestStateEquals() {
+			State s1 = new State ("state1");
+			State s2 = new State ("state2");
+			State s3 = new State ("state1"); // same name different objects
+			Assert.That(s1.Equals(s1), Is.True);
+			Assert.That (s1.Equals (s3), Is.True);
+			Assert.That (s1.Equals (s2), Is.False);
+			Assert.That (s1.Equals(null), Is.False);
+		}
+
 		[Test, Description("Basic Transition Tests")]
 		public void TestTransition () {
 			State s_from = new State ("from");
