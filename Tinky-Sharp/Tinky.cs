@@ -68,7 +68,7 @@ namespace Tinky {
 			else if (n.name == this.name)
 				return true;
 			else
-				return true;
+				return false;
 				
 		}
 
