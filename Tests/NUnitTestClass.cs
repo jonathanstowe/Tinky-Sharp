@@ -34,6 +34,20 @@ namespace TinkySharp
 			Transition t = new Transition() { name="transition", from=s_from,to=s_to };
 			Assert.That (t.name, Is.EqualTo ("transition"));
 		}
+
+		[Test, Description("Transition Equals tests") ]
+		public void TestTransitionEquals() {
+			State s1 = new State ("state1");
+			State s2 = new State ("state2");
+			State s3 = new State ("state3");
+			Transition t1 = new Transition () { name = "t1", from = s1, to = s2 };
+			Transition t2 = new Transition () { name = "t2", from = s2, to = s3 };
+			Assert.That(t1.Equals(t1), Is.True);
+			Assert.That (t2.Equals (t2), Is.True);
+			Assert.That (t1.Equals (t2), Is.False);
+			Assert.That (t1.Equals(null), Is.False);
+
+		}
 	}
 }
 
