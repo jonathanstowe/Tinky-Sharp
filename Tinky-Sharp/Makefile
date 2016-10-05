@@ -9,7 +9,7 @@ top_srcdir=..
 include $(top_srcdir)/config.make
 
 ifeq ($(CONFIG),DEBUG)
-ASSEMBLY_COMPILER_COMMAND = mcs
+ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize- -debug "-define:DEBUG"
 ASSEMBLY = bin/Debug/Tinky-Sharp.dll
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
@@ -23,7 +23,7 @@ TINKY_SHARP_DLL_MDB=$(BUILD_DIR)/Tinky-Sharp.dll.mdb
 endif
 
 ifeq ($(CONFIG),RELEASE)
-ASSEMBLY_COMPILER_COMMAND = mcs
+ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize+
 ASSEMBLY = bin/Release/Tinky-Sharp.dll
 ASSEMBLY_MDB = 
@@ -51,8 +51,7 @@ TINKY_SHARP_PC = $(BUILD_DIR)/tinky-sharp.pc
 
 FILES = \
 	Properties/AssemblyInfo.cs \
-	Tinky.cs \
-	NUnitTestClass.cs 
+	Tinky.cs 
 
 DATA_FILES = 
 
