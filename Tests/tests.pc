@@ -1,0 +1,6 @@
+Name: Tests
+Description: Tests
+Version: 0.1
+
+Requires: 
+Libs: -r:/usr/local/lib/tinky-sharp/Tests.dll

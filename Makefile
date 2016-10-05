@@ -12,10 +12,10 @@ include $(top_srcdir)/rules.make
 
 #Warning: This is an automatically generated file, do not edit!
 ifeq ($(CONFIG),DEBUG)
- SUBDIRS =  Tinky-Sharp
+ SUBDIRS =  Tinky-Sharp Tests
 endif
 ifeq ($(CONFIG),RELEASE)
- SUBDIRS =  Tinky-Sharp
+ SUBDIRS =  Tinky-Sharp Tests
 endif
 
 
